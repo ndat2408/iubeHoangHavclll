@@ -589,7 +589,7 @@ var ParticlePool = (function() {
 const FirstDate = new Date("11/01/2022").getTime()
 let CurrentDate = new Date().getTime()
 let CountDay = Math.floor((CurrentDate - FirstDate) / (1000 * 60 * 60 * 24))
-
+CountDay+=1
 if (CountDay % 7 == 0) {
   document.querySelector("#count_day").innerHTML=CountDay/7+" tuần"
 }
